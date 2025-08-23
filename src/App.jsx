@@ -70,11 +70,9 @@ const App = () => {
 
   const [code, setCode] = useState("");
 
-  // const ai = new GoogleGenAI({
-  //   apiKey: import.meta.env.GEMINI_API_KEY
-  // });
-
-   const apiUrl = import.meta.env.GEMINI_API_KEY;
+      const ai = new GoogleGenAI({
+       apiKey: import.meta.env.VITE_GEMINI_API_KEY
+      });
 
 const [loading, setLoading] = useState(false);
 const [response, setResponse] = useState("");
@@ -160,3 +158,5 @@ Code: ${code}
 };
 
 export default App;
+
+
